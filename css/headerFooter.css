@@ -15,6 +15,37 @@
     margin: auto;
 }
 
+.sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background: gray;
+}
+
+.sideNav-list {
+    list-style: none;
+}
+
+.sideNav-list.main {}
+
+.sideNav-list.social {}
+
+.sideNav-list.language {
+    display: flex;
+}
+
+.sideNav-list.language .sideNav-list-item {
+    margin-left: 25px;
+    z-index: 1;
+}
+
+.sideNav-list-item-link {
+    color: black;
+    text-decoration: none;
+}
+
 .footer {
     height: 300px;
     padding-bottom: 64px;
