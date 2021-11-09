@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    margin-top: 50px;
+}
+
+.header-nav {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.header-logo {
+    width: 305px;
+    height: 42px;
+    margin: auto;
+}
+
+.footer {
+    height: 300px;
+    padding-bottom: 64px;
+    padding-top: 113px;
+}
+
+.footer-share {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 29px;
+}
+
+.footer-copyright {
+    height: 29px;
+    margin-top: 18px;
+}
+
+.footer-others {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 29px;
+    margin-top: 18px;
+}
+
+.footer-others-links {
+    color: inherit;
+    text-decoration: inherit;
+    margin-left: 1px;
+}
+
+.footer-others-links:hover {
+    color: cadetblue;
+    text-decoration: underline;
+}
