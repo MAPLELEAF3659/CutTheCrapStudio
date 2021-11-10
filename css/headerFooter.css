@@ -24,21 +24,20 @@
     background: gray;
 }
 
+.sideNav-btn-close {
+    margin-top: 30px;
+}
+
 .sideNav-list {
     list-style: none;
 }
-
-.sideNav-list.main {}
-
-.sideNav-list.social {}
 
 .sideNav-list.language {
     display: flex;
 }
 
 .sideNav-list.language .sideNav-list-item {
-    margin-left: 25px;
-    z-index: 1;
+    margin-right: 25px;
 }
 
 .sideNav-list-item-link {

@@ -1,9 +1,9 @@
-.main {
+.main-title {
     height: 600px;
     padding-top: 200px;
 }
 
-.main-title {
+.main-title-text {
     text-align: center;
 }
 
@@ -23,12 +23,29 @@
     /* height: 688px; */
 }
 
+.display-title {
+    height: 96px;
+}
+
 .display-image {
     height: 592px;
     background-color: azure;
 }
 
+.ani-area-head {
+    width: 100%;
+}
+
+.ani-area-line {
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-left: 10px dotted #000;
+    width: 10px;
+}
+
 .desription {
-    height: 688px;
-    background-color: azure;
+    height: 100%;
+    padding-top: 5%;
 }
