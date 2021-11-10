@@ -59,6 +59,16 @@
     height: 29px;
 }
 
+.footer-share-btns {
+    height: 24px;
+    width: 24px;
+    margin-left: 34px;
+}
+
+.footer-share-btns.btn-instagram {
+    margin-left: 20px;
+}
+
 .footer-copyright {
     height: 29px;
     margin-top: 18px;
@@ -75,7 +85,11 @@
 .footer-others-links {
     color: inherit;
     text-decoration: inherit;
-    margin-left: 1px;
+    margin-left: 2px;
+}
+
+.footer-others-links.link-termsOfUse {
+    margin-left: 0;
 }
 
 .footer-others-links:hover {
