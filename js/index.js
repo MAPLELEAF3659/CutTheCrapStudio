@@ -26,9 +26,11 @@ $(function () {
         .setPin("#hand")
         .addIndicators()
         .addTo(controller);
-        
-    scene = new ScrollMagic.Scene({ triggerElement: "#trigger2", duration: 1 })
-    .setPin("#slogan")
-    .addIndicators()
-    .addTo(controller);
+
+    scene = new ScrollMagic.Scene({
+        triggerElement: "#trigger2",
+        triggerHook: 0.15})
+        .setTween(tl)
+        .addIndicators()
+        .addTo(controller);
 });

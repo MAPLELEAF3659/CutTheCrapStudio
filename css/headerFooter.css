@@ -21,7 +21,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 50%;
+    width: 40%;
     background: gray;
     z-index: 99;
 }
@@ -32,6 +32,7 @@
 
 .sideNav-list {
     list-style: none;
+    margin-left: 50px;
 }
 
 .sideNav-list.language {
