@@ -2,7 +2,7 @@
     height: 800px;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
 }
 
 .heads-ani div {
@@ -22,7 +22,6 @@
     height: auto;
     background-color: #fff;
     text-align: center;
-    z-index: 1;
 }
 
 .heads-ani-items.head{
@@ -47,7 +46,7 @@
     height: 613px;
     width: 100%;
     background-color: azure;
-    z-index: 3;
+    z-index: 2;
 }
 
 .slogan-title {
