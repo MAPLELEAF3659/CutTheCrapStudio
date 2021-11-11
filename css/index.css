@@ -1,11 +1,18 @@
-.heads-ani {
-    height: 800px;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+.main-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -2;
 }
 
-.heads-ani div {
+.heads-ani {
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heads-ani-items {
     position: absolute;
     width: 400px;
     height: 400px;
@@ -15,25 +22,19 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
+    z-index: -1;
 }
 
-.heads-ani-items.title {
-    width: auto;
-    height: auto;
-    background-color: #fff;
-    text-align: center;
-}
-
-.heads-ani-items.head{
+.heads-ani-items.head {
     background-color: royalblue;
 }
 
-.heads-ani-items.logo{
-    background-color:salmon;
+.heads-ani-items.logo {
+    background-color: salmon;
 }
 
-.heads-ani-items.hand{
-    background-color:white;
+.heads-ani-items.hand {
+    background-color: white;
     border: 10px black solid;
     width: 200px;
     height: 200px;
@@ -44,15 +45,14 @@
     justify-content: center;
     align-items: center;
     height: 613px;
-    width: 100%;
     background-color: azure;
-    z-index: 2;
 }
 
 .slogan-title {
     display: table-cell;
     vertical-align: middle;
     align-content: center;
+    opacity: 0;
 }
 
 .slogan-title-up {
@@ -96,7 +96,6 @@
 
 .whatWeDo-subtitles-item-box {
     display: flex;
-    width: 420px;
     height: 425px;
     background-color: azure;
 }
