@@ -23,6 +23,7 @@
     bottom: 0;
     width: 50%;
     background: gray;
+    z-index: 99;
 }
 
 .sideNav-btn-close {
