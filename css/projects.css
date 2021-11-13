@@ -32,8 +32,14 @@ body {
 }
 
 .display-image {
-    height: auto;
-    background-color: azure;
+    /* height: 400px;
+    background-color: azure; */
+}
+
+.jarallax-img {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
 }
 
 .display-image img {
