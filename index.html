@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/index.css">
 
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -19,14 +20,18 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/splide.min.js"></script>
 
     <title>Cut the Crap Studio | Home</title>
 </head>
 
 <body>
+    <script>
+        import Splide from '@splidejs/splide';
+    </script>
     <header class="header align-items-center">
         <input class="header-nav" data-action="open" type="image" src="image/btn_nav.png" alt="btn_nav">
-        <a class="header-logo" href="index.html"><img src="image/logo.png" alt="logo"></a>
+        <a class="header-logo" href="index.html"><img src="image/logo_header.png" alt="logo"></a>
     </header>
 
     <nav class="sideNav">
@@ -62,7 +67,7 @@
             <div class="heads-ani-items head" id="head1"></div>
             <div class="heads-ani-items head" id="head2"></div>
             <div class="heads-ani-items head" id="head3"></div>
-            <div class="heads-ani-items logo" id="logo"></div>
+            <img src="image/logo.png" alt="logo" class="heads-ani-items logo" id="logo">
             <div class="heads-ani-items hand" id="hand"></div>
         </div>
         <div class="slogan">
@@ -74,11 +79,26 @@
         </div>
         <div class="recentWork">
             <p class="recentWork-title text-style-3">Recent Work</p>
-            <div class="align-items-center recentWork-images">
-                <input class="btn-previous" type="image" src="image/btn_previous.png" alt="btn_previous">
-                <div class="col-9 recentWork-images-current"></div>
-                <input class="btn-next" type="image" src="image/btn_next.png" alt="btn_next">
-                <div class="col-2 recentWork-images-next"></div>
+            <div class="recentWork-images">
+                <div class="splide__track">
+                    <ul class="splide__list recentWork-images-list">
+                        <li class="splide__slide recentWork-images-list-item">
+                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                        </li>
+                        <li class="splide__slide recentWork-images-list-item">
+                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                        </li>
+                        <li class="splide__slide recentWork-images-list-item">
+                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                        </li>
+                        <li class="splide__slide recentWork-images-list-item">
+                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                        </li>
+                        <li class="splide__slide recentWork-images-list-item">
+                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="whatWeDo">
@@ -147,6 +167,18 @@
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script src="js/sideNav.js"></script>
     <script src="js/index.js"></script>
+
+    <script>
+        new Splide('.recentWork-images', {
+            type: "loop",
+            perPage: 2,
+            autoplay: "ture",
+            autoWidth: true,
+            arrows: false,
+            pagination: false,
+            isNavigation: true
+        }).mount();
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+body {
+    background-color: beige;
+}
+
 .main-title {
     position: absolute;
     left: 0;
@@ -30,7 +34,7 @@
 }
 
 .heads-ani-items.logo {
-    background-color: salmon;
+    border-radius: 0;
 }
 
 .heads-ani-items.hand {
@@ -38,6 +42,7 @@
     border: 10px black solid;
     width: 200px;
     height: 200px;
+    margin-top: 200px;
 }
 
 .slogan {
@@ -45,6 +50,8 @@
     justify-content: center;
     align-items: center;
     height: 613px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     background-color: azure;
 }
 
@@ -64,18 +71,17 @@
     margin-left: 50px;
 }
 
-.recentWork-images {
-    display: flex;
+.splide__slide {
+    transform: scale(0.8, 0.8);
+    transform: translate(0, 20%);
 }
 
-.recentWork-images-current {
-    height: 800px;
-    background-color: azure;
+.splide__slide.is-active {
+    transform: scale(1, 1);
 }
 
-.recentWork-images-next {
+.recentWork-images-list-item img {
     height: 600px;
-    background-color: azure;
 }
 
 .btn-previous {
