@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="css/headerFooter.css">
-    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/splide-core.min.css">
     <link rel="stylesheet" href="css/index.css">
 
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -79,23 +79,26 @@
         </div>
         <div class="recentWork">
             <p class="recentWork-title text-style-3">Recent Work</p>
-            <div class="recentWork-images">
+            <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list recentWork-images-list">
                         <li class="splide__slide recentWork-images-list-item">
                             <img src="image/works/work_3d_1.jpg" alt="work_imgs">
                         </li>
                         <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                            <img src="image/works/work_3d_2.jpg" alt="work_imgs">
                         </li>
                         <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                            <img src="image/works/work_3d_3.jpg" alt="work_imgs">
                         </li>
                         <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                            <img src="image/works/work_3d_2.jpg" alt="work_imgs">
                         </li>
                         <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                            <img src="image/works/work_3d_3.jpg" alt="work_imgs">
+                        </li>
+                        <li class="splide__slide recentWork-images-list-item">
+                            <img src="image/works/work_3d_3.jpg" alt="work_imgs">
                         </li>
                     </ul>
                 </div>
@@ -169,14 +172,17 @@
     <script src="js/index.js"></script>
 
     <script>
-        new Splide('.recentWork-images', {
-            type: "loop",
-            perPage: 2,
-            autoplay: "ture",
+        new Splide('.splide', {
+            type: 'loop',
+            clones: 5,
+            perPage: 3,
+            autoplay: true,
+            heightRatio: 0.4,
             autoWidth: true,
             arrows: false,
             pagination: false,
-            isNavigation: true
+            isNavigation: true,
+            trimSpace: false
         }).mount();
     </script>
 </body>
