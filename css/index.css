@@ -1,5 +1,5 @@
 body {
-    background-color: beige;
+    background-color: gainsboro;
 }
 
 .main-title {
@@ -22,38 +22,33 @@ body {
 }
 
 .heads-ani {
-    height: 700px;
+    height: 900px;
     align-items: center;
     justify-content: center;
 }
 
 .heads-ani-items {
     position: absolute;
-    width: 400px;
-    height: 400px;
     left: 0;
     right: 0;
-    top: 400px;
+    top: 300px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
     z-index: -1;
 }
 
 .heads-ani-items.head {
-    background-color: royalblue;
+    width: 400px;
+    margin-top: 10px;
 }
 
 .heads-ani-items.logo {
-    border-radius: 0;
+    width: 550px;
 }
 
 .heads-ani-items.hand {
-    background-color: white;
-    border: 10px black solid;
+    margin-top: 300px;
     width: 200px;
-    height: 200px;
-    margin-top: 200px;
 }
 
 .slogan {
