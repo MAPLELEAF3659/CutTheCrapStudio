@@ -37,11 +37,13 @@ body {
 }
 
 .ani-area-head {
-    width: 100%;
+    position: absolute;
+    width: 86px;
 }
 
 .ani-area-line {
-    height: 90%;
+    height: 70%;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     border: none;
