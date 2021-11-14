@@ -73,3 +73,7 @@ $(window).scroll(function() {
 })
 
 objectFitImages();
+
+$('.display-image').jarallax({
+    speed: 0.2
+});

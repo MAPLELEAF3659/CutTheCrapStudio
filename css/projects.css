@@ -30,9 +30,14 @@ body {
     height: 96px;
 }
 
-.display-image img {
+.display-image {
     width: 100%;
     height: 400px;
+}
+
+.display-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
