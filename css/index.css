@@ -1,5 +1,5 @@
 body {
-    background-color: gainsboro;
+    background-color: #FFD5D5;
 }
 
 .main-title {
@@ -58,7 +58,7 @@ body {
     height: 613px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    background-color: azure;
+    background-color: #392A5F;
 }
 
 .slogan-title {
@@ -66,6 +66,7 @@ body {
     vertical-align: middle;
     align-content: center;
     opacity: 0;
+    color: #FFF2AC;
 }
 
 .slogan-title-up {
@@ -81,6 +82,7 @@ body {
     transform: scale(0.8);
     margin-top: 6%;
     height: 100%;
+    cursor: pointer;
 }
 
 .splide__slide.is-active img {
