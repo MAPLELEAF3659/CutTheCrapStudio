@@ -21,18 +21,16 @@
 .draw-ani-hand {
     position: absolute;
     top: 645px;
-    left: 49.5%;
-    opacity: 1;
-    animation: fadeIn 1s;
+    left: 50.5%;
+    animation: fadeIn 1s forwards;
     z-index: 2;
 }
 
 .draw-ani-hand.fade-out {
     position: absolute;
     top: 650px;
-    left: 50%;
-    opacity: 0;
-    animation: fadeOut 1s;
+    left: 50.5%;
+    animation: fadeOut 1s forwards;
     z-index: 2;
 }
 
@@ -58,8 +56,8 @@
     content: "";
     background-color: #FFFAEA;
     position: absolute;
-    height: 240%;
-    width: 200%;
+    height: 175%;
+    width: 150%;
     left: -50%;
     margin-top: -50px;
     z-index: -1;
@@ -107,6 +105,7 @@
     font-weight: normal;
     width: auto;
     text-align: center;
+    font-size: 50px;
 }
 
 .fourDims-area-image {

@@ -23,15 +23,14 @@
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    position: relative;
 }
 
 .work-area:before {
     content: "";
     background-color: #FFFAEA;
     position: absolute;
-    height: 100%;
-    width: 200%;
+    height: 290%;
+    width: 150%;
     left: -50%;
     margin-top: -50px;
     margin-bottom: -50px;

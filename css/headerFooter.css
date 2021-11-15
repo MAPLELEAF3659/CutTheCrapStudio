@@ -37,7 +37,21 @@ body {
 .sideNav__bg {
     width: 60%;
     background: gray;
-    opacity: 50%;
+    opacity: 0%;
+}
+
+.sideNav__bg.fadeIn {
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 50%;
+    }
 }
 
 .sideNav-btn-close {
