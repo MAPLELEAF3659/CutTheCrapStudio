@@ -2,6 +2,7 @@ var controller = new ScrollMagic.Controller();
 var scene;
 
 var lineHeight = $(".draw-ani-line").height();
+$(".draw-ani-line").css("height", "0px");
 
 $(function() {
     scene = new ScrollMagic.Scene({
