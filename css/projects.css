@@ -23,7 +23,7 @@ body {
 }
 
 .work-area {
-    background-color: #fff;
+    background-color:cornsilk;
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -32,7 +32,7 @@ body {
 
 .work-area:before {
     content: "";
-    background-color: #fff;
+    background-color: cornsilk;
     position: absolute;
     height: 100%;
     width: 200%;

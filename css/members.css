@@ -5,9 +5,21 @@ body {
 .main-title {
     height: 600px;
     background-color: azure;
-    padding-top: 200px;
+    padding-top: 300px;
     padding-left: 100px;
+    font-size: 80px;
 }
+
+.draw-ani{
+    position: absolute;
+    height: auto;
+}
+
+.draw-ani-line{
+    
+}
+
+
 
 .members-area-item {
     margin-top: 50px;
@@ -19,9 +31,15 @@ body {
 }
 
 .members-area-item-image {
-    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     height: 400px;
-    margin: auto;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
     border: 10px solid #000;
 }
 
