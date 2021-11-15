@@ -65,19 +65,21 @@
     line-height: 59px;
     letter-spacing: -0.015em;
     text-align: left;
+    color: #392A5F;
 }
 
 
 /* small subtitle */
 
 .text-style-6 {
-    font-family: 'Times New Roman';
+    font-family: Arial;
     font-size: 75px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 86px;
+    font-weight: 900;
+    line-height: 106px;
     letter-spacing: 0em;
     text-align: left;
+    color: #392A5F;
 }
 
 
