@@ -13,7 +13,7 @@
 
 .main-circle {
     position: absolute;
-    width: 400px;
+    width: 300px;
     height: auto;
     z-index: -1;
 }
@@ -29,7 +29,7 @@
     content: "";
     background-color: #FFFAEA;
     position: absolute;
-    height: 290%;
+    height: 310%;
     width: 150%;
     left: -50%;
     margin-top: -50px;
@@ -38,7 +38,7 @@
 }
 
 .work-area-item {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .display-title {
