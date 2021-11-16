@@ -61,6 +61,21 @@ body {
 .sideNav-list {
     list-style: none;
     margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.sideNav-list.main li a {
+    line-height: 100px;
+}
+
+.sideNav-list.social li a {
+    font-weight: 400;
+    line-height: 80px;
+}
+
+.sideNav-list.language li a {
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .sideNav-list.language {
@@ -72,7 +87,6 @@ body {
 }
 
 .sideNav-list-item-link {
-    color: black;
     text-decoration: none;
     color: #392A5F;
 }
@@ -118,7 +132,6 @@ body {
 }
 
 .footer-others-links {
-    color: inherit;
     text-decoration: inherit;
     margin-left: 2px;
 }

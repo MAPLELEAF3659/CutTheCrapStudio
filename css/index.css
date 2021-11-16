@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 613px;
+    height: 400px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     background-color: #392A5F;
@@ -72,6 +72,10 @@
 .slogan-title-down {
     text-align: left;
     margin-left: 50px;
+}
+
+.recentWork {
+    background-color: #FFE5DA;
 }
 
 .splide__slide img {
@@ -164,7 +168,7 @@
     width: 420px;
     height: 142px;
     text-align: center;
-    margin: 50px auto;
+    margin-top: 50px;
 }
 
 .img-3d {

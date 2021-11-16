@@ -1,98 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* main-page-text */
-
-.text-style-1 {
+.text-style-title {
     font-family: Arial;
     font-size: 120px;
     font-style: normal;
     font-weight: 900;
     line-height: 169px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     color: #392A5F;
 }
 
-
-/* slogan */
-
-.text-style-2 {
+.text-style-subtitle {
     font-family: Arial;
-    font-size: 115px;
-    font-style: normal;
-    font-weight: bolder;
-    line-height: 132px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-
-/* title */
-
-.text-style-3 {
-    font-family: Arial;
-    font-size: 117px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 900;
-    line-height: 165px;
+    line-height: 74px;
     letter-spacing: 0em;
     text-align: left;
     color: #392A5F;
 }
 
-
-/* subtitle */
-
-.text-style-4 {
+.text-style-slogan {
     font-family: Arial;
-    font-size: 90px;
+    font-size: 70px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 128px;
+    font-weight: 900;
+    line-height: 99px;
     letter-spacing: 0em;
-    text-align: center;
-    color: #392A5F;
+    text-align: left;
 }
 
-
-/* text */
-
-.text-style-5 {
+.text-style-text {
     font-family: 'Times New Roman';
-    font-size: 48px;
+    font-size: 37px;
     font-style: normal;
     font-weight: 400;
-    line-height: 59px;
+    line-height: 46px;
     letter-spacing: -0.015em;
     text-align: left;
-    color: #392A5F;
-}
-
-
-/* small subtitle */
-
-.text-style-6 {
-    font-family: Arial;
-    font-size: 75px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 106px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #392A5F;
-}
-
-
-/* main-title */
-
-.text-style-7 {
-    font-family: Arial;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 282px;
-    letter-spacing: 0em;
-    text-align: center;
     color: #392A5F;
 }
 
@@ -107,37 +53,5 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: center;
-}
-
-
-/* nav */
-
-.text-style-nav-main {
-    font-family: Arial;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 90px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.text-style-nav-sub {
-    font-family: Arial;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 80px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.text-style-nav-language {
-    font-family: Arial;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0em;
-    text-align: left;
+    color: #392A5F;
 }
