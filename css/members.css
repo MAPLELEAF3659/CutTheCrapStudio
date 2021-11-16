@@ -55,18 +55,6 @@
     margin-bottom: -50px;
 }
 
-.members-area::before {
-    content: "";
-    background-color: #FFFAEA;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 150%;
-    left: -25%;
-    padding: 0 50px;
-    z-index: -1;
-}
-
 .members-area-item {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -100,7 +88,11 @@
 }
 
 .fourDims-area {
+    position: relative;
     height: auto;
+    background-color: transparent;
+    margin-top: -50px;
+    margin-bottom: -50px;
 }
 
 .fourDims-area p {
@@ -204,6 +196,19 @@
     top: 70%;
     left: 10%;
     transform: rotate(-10deg);
+}
+
+.members-area::before,
+.fourDims-area::before {
+    content: "";
+    background-color: #FFFAEA;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150%;
+    left: -25%;
+    padding: 0 50px;
+    z-index: -1;
 }
 
 @keyframes fadeIn {
