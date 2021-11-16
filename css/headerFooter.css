@@ -40,6 +40,24 @@ body {
     opacity: 0%;
 }
 
+@media (max-width:768px) {
+    .sideNav__left {
+        width: 50%;
+    }
+    .sideNav__bg {
+        width: 50%;
+    }
+}
+
+@media (max-width:576px) {
+    .sideNav__left {
+        width: 100%;
+    }
+    .sideNav__bg {
+        width: 0%;
+    }
+}
+
 .sideNav__bg.fadeIn {
     animation: fadeInBg 1s forwards;
     animation-delay: 0.4s;

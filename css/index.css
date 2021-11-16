@@ -5,7 +5,7 @@
     margin: 0 auto;
     text-align: center;
     z-index: -2;
-    width: 17ch;
+    width: 13ch;
     animation: typing 2s steps(19);
     white-space: nowrap;
     overflow: hidden;
