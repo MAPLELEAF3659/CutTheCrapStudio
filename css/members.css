@@ -34,24 +34,6 @@
     z-index: 2;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 .members-area {
     display: block;
     height: 100%;
@@ -124,15 +106,6 @@
     animation: fadeOut 1s forwards;
 }
 
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 .fourDims-area-image-box.bg {
     height: 100%;
     width: auto;
@@ -194,15 +167,6 @@
     animation: fadeIn 1s forwards;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 #head1 {
     top: 40%;
     left: 40%;
@@ -219,4 +183,22 @@
     top: 70%;
     left: 10%;
     transform: rotate(-10deg);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
