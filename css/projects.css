@@ -19,21 +19,22 @@
 }
 
 .work-area {
+    position: relative;
     background-color: transparent;
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.work-area:before {
+.work-area::before {
     content: "";
     background-color: #FFFAEA;
     position: absolute;
-    height: 310%;
+    top: 0;
+    bottom: 0;
     width: 150%;
-    left: -50%;
-    margin-top: -50px;
-    margin-bottom: -50px;
+    left: -25%;
+    padding: 0 50px;
     z-index: -1;
 }
 
@@ -75,4 +76,28 @@
 .desription {
     height: 100%;
     padding-top: 7%;
+}
+
+@media (max-width:992px) {
+    .main-title {
+        height: 300px;
+    }
+    .main-circle {
+        width: 250px;
+    }
+    .display-image {
+        height: 250px;
+    }
+}
+
+@media (max-width:576px) {
+    .main-title {
+        height: 200px;
+    }
+    .main-circle {
+        width: 150px;
+    }
+    .display-image {
+        height: 150px;
+    }
 }

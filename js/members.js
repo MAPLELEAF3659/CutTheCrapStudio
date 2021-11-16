@@ -28,7 +28,7 @@ $(function() {
             duration: 0,
             triggerHook: 0.8
         })
-        .offset(300)
+        .offset(200)
         .setTween("#item2", 1, { opacity: 1 })
         .addTo(controller);
 
@@ -37,7 +37,7 @@ $(function() {
             duration: 0,
             triggerHook: 0.8
         })
-        .offset(300)
+        .offset(200)
         .setTween("#item3", 1, { opacity: 1 })
         .addTo(controller);
 
@@ -46,7 +46,7 @@ $(function() {
             duration: 0,
             triggerHook: 0.8
         })
-        .offset(300)
+        .offset(200)
         .setTween("#item4", 1, { opacity: 1 })
         .addTo(controller);
 
@@ -70,6 +70,6 @@ $(function() {
                 $(".fourDims-area p").removeClass("isAni");
             }
         })
-        .offset(500)
+        .offset(250)
         .addTo(controller);
 });

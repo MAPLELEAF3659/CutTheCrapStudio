@@ -171,7 +171,7 @@
     top: 20%;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .heads-ani {
         height: 900px;
     }

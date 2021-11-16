@@ -56,7 +56,7 @@
     color: #392A5F;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .text-style-title {
         font-size: 5rem;
     }
