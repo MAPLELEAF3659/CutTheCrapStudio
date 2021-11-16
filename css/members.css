@@ -52,20 +52,21 @@
     }
 }
 
-.members-area:before {
-    content: "";
+.members-area {
+    display: block;
+    height: 100%;
     background-color: #FFFAEA;
-    position: absolute;
-    height: 1650px;
-    width: 150%;
-    left: -50%;
     margin-top: -50px;
-    z-index: -1;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding-left: calc(10vw);
+    padding-right: calc(10vw);
 }
 
 .members-area-item {
     margin-top: 50px;
     margin-bottom: 50px;
+    opacity: 0;
 }
 
 .members-area-item.img-right .members-area-item-text {
@@ -106,6 +107,11 @@
     width: auto;
     text-align: center;
     font-size: 50px;
+    opacity: 0;
+}
+
+.fourDims-area p.isAni {
+    animation: fadeIn 1s forwards;
 }
 
 .fourDims-area-image {
@@ -114,27 +120,87 @@
     width: auto;
 }
 
+.fourDims-area-image-box {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .fourDims-area-image-box.bg {
     height: 100%;
     width: auto;
+    opacity: 0;
+}
+
+.fourDims-area-image-box.bg.isAni {
+    animation: fadeIn 1s forwards;
 }
 
 .fourDims-area-image-box.hor {
     position: absolute;
     top: 0;
     left: 0;
+    clip-path: inset(0 100% 0 0);
+}
+
+.fourDims-area-image-box.hor.isAni {
+    animation: maskLeftToRight 1s forwards;
+}
+
+@keyframes maskLeftToRight {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 .fourDims-area-image-box.ver {
     position: absolute;
     top: 0;
     left: 0;
+    clip-path: inset(0 0 100% 0);
+}
+
+.fourDims-area-image-box.ver.isAni {
+    animation: maskUpToBottom 1s forwards;
+}
+
+@keyframes maskUpToBottom {
+    0% {
+        clip-path: inset(0 0 100% 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 .fourDims-area-image-box.head {
     position: absolute;
     width: 150px;
     height: auto;
+    opacity: 0;
+}
+
+.fourDims-area-image-box.head.isAni {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #head1 {
