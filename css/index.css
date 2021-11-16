@@ -79,7 +79,7 @@
 }
 
 .recentWork-title {
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
 
 .splide__slide img {
@@ -108,7 +108,7 @@
 
 .whatWeDo-title {
     text-align: right;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
 
 .whatWeDo-subtitles-item {
@@ -188,6 +188,12 @@
     .heads-ani-items.hand {
         width: 150px;
         margin-top: 250px;
+    }
+    .recentWork-title {
+        margin-bottom: 0;
+    }
+    .whatWeDo-title {
+        margin-bottom: 0;
     }
 }
 
