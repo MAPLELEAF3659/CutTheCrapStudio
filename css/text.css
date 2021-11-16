@@ -56,15 +56,35 @@
     color: #392A5F;
 }
 
-@media (max-width:576px) {
+@media (max-width:768px) {
     .text-style-title {
-        font-size: 3rem;
+        font-size: 5rem;
     }
     .text-style-subtitle {
         font-size: 2.75rem;
     }
     .text-style-slogan {
-        font-size: 2rem;
+        font-size: 3.75rem;
+    }
+    .text-style-text {
+        font-size: 1.2rem;
+    }
+    .text-style-footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:576px) {
+    .text-style-title {
+        font-size: 2.5rem;
+        line-height: 90px;
+    }
+    .text-style-subtitle {
+        font-size: 2.75rem;
+    }
+    .text-style-slogan {
+        font-size: 1.5rem;
+        line-height: 25px;
     }
     .text-style-text {
         font-size: 1.2rem;
