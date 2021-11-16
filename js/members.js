@@ -30,7 +30,6 @@ $(function() {
         })
         .offset(300)
         .setTween("#item2", 1, { opacity: 1 })
-        .addIndicators()
         .addTo(controller);
 
     scene = new ScrollMagic.Scene({
@@ -40,7 +39,6 @@ $(function() {
         })
         .offset(300)
         .setTween("#item3", 1, { opacity: 1 })
-        .addIndicators()
         .addTo(controller);
 
     scene = new ScrollMagic.Scene({
@@ -50,7 +48,6 @@ $(function() {
         })
         .offset(300)
         .setTween("#item4", 1, { opacity: 1 })
-        .addIndicators()
         .addTo(controller);
 
     scene = new ScrollMagic.Scene({
@@ -74,6 +71,5 @@ $(function() {
             }
         })
         .offset(500)
-        .addIndicators()
         .addTo(controller);
 });
