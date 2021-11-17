@@ -47,6 +47,38 @@
     margin-top: 300px;
 }
 
+.heads-ani-decos {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    z-index: -3;
+}
+
+.deco-paper1 {
+    bottom: -100px;
+    left: 2vw;
+}
+
+.deco-paper2 {
+    bottom: 200px;
+    left: 4vw;
+}
+
+.deco-paper3 {
+    bottom: 50px;
+    right: 4vw;
+}
+
+.deco-paper4 {
+    bottom: -400px;
+    right: 2vw;
+}
+
+.deco-hand {
+    bottom: -5vh;
+    right: 4vw;
+}
+
 .slogan {
     display: flex;
     justify-content: center;
@@ -76,10 +108,19 @@
 
 .recentWork {
     background-color: #FFE5DA;
+    margin-bottom: 50px;
 }
 
 .recentWork-title {
     margin-bottom: 16px;
+}
+
+.recentWork-deco {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    right: 15vw;
+    bottom: -80px;
 }
 
 .splide__slide img {
@@ -189,8 +230,19 @@
         width: 150px;
         margin-top: 250px;
     }
+    .heads-ani-decos {
+        height: 250px;
+    }
+    .recentWork {
+        margin-bottom: 10px;
+    }
     .recentWork-title {
         margin-bottom: 0;
+    }
+    .recentWork-deco {
+        width: 120px;
+        right: 20vw;
+        bottom: -50px;
     }
     .whatWeDo-title {
         margin-bottom: 0;
@@ -216,8 +268,19 @@
         width: 100px;
         margin-top: 175px;
     }
+    .heads-ani-decos {
+        height: 150px;
+    }
     .slogan {
         height: 200px;
+    }
+    .recentWork {
+        margin-bottom: 10px;
+    }
+    .recentWork-deco {
+        width: 80px;
+        right: 20vw;
+        bottom: -30px;
     }
     .frame {
         transform: scale(0.9);
