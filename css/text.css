@@ -70,7 +70,25 @@
         font-size: 1.8rem;
     }
     .text-style-footer {
-        font-size: 1rem;
+        font-size: 1.375rem;
+    }
+}
+
+@media (max-width:768px) {
+    .text-style-title {
+        font-size: 4.25rem;
+    }
+    .text-style-subtitle {
+        font-size: 3rem;
+    }
+    .text-style-slogan {
+        font-size: 2.75rem;
+    }
+    .text-style-text {
+        font-size: 1.6rem;
+    }
+    .text-style-footer {
+        font-size: 1.375rem;
     }
 }
 
