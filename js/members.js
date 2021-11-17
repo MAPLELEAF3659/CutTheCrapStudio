@@ -5,6 +5,7 @@ $(".draw-ani-line").css("height", $(".members-area").height());
 var lineHeight = $(".draw-ani-line").height();
 $(".draw-ani-line").css("height", "0px");
 
+
 $(function() {
     scene = new ScrollMagic.Scene({
             triggerElement: "#trigger1",
@@ -72,4 +73,17 @@ $(function() {
         })
         .offset(250)
         .addTo(controller);
+});
+
+$(".image").each(function() {
+    $(jQuery(this).children(".image-alt")).fadeOut(0);
+    $(this).hover(
+        function() {
+            $(jQuery(this).children(".image-ori")).fadeOut(500);
+            $(jQuery(this).children(".image-alt")).fadeIn(500);
+        },
+        function() {
+            $(jQuery(this).children(".image-ori")).fadeIn(500);
+            $(jQuery(this).children(".image-alt")).fadeOut(500);
+        })
 });

@@ -97,15 +97,27 @@
 }
 
 .image {
+    position: relative;
     width: 400px;
-    height: auto;
+    height: 370px;
     border: 10px solid #392A5F;
 }
 
-.image-hand {
+.image-ori {
+    position: absolute;
+    z-index: 1;
+}
+
+.image-alt {
+    position: absolute;
+    z-index: 2;
+}
+
+.image-deco__hand {
     position: absolute;
     right: -10px;
     bottom: -10px;
+    z-index: 3;
 }
 
 .fourDims-area {
@@ -269,9 +281,9 @@
     }
     .image {
         width: 300px;
-        height: auto;
+        height: 277.5px;
     }
-    .image-hand {
+    .image-deco__hand {
         width: 80px;
         height: auto;
     }
@@ -299,9 +311,9 @@
     }
     .image {
         width: 200px;
-        height: auto;
+        height: 185px;
     }
-    .image-hand {
+    .image-deco__hand {
         right: 0;
         bottom: 10px;
         width: 50px;
