@@ -145,12 +145,21 @@ body {
     text-decoration: underline;
 }
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
     .sideNav__left {
         width: 50%;
     }
     .sideNav__bg {
         width: 50%;
+    }
+}
+
+@media (max-width:992px) {
+    .sideNav__left {
+        width: 60%;
+    }
+    .sideNav__bg {
+        width: 40%;
     }
 }
 
