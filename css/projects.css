@@ -96,6 +96,12 @@
     .display-image {
         height: 250px;
     }
+    .ani-area-head {
+        opacity: 0;
+    }
+    .ani-area-line {
+        opacity: 0;
+    }
 }
 
 @media (max-width:576px) {

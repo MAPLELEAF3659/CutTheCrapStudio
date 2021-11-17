@@ -18,7 +18,6 @@ $(function() {
         });
     });
 
-
     //pac head
     scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: pacHeadDuration })
         .setPin("#head1")
