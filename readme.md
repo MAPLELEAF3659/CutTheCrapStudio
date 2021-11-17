@@ -1,4 +1,4 @@
-<h1>Cut the Crap Studio offical website</h1>
+<h1>Cut the Crap Studio official website</h1>
 <h3>Designer & Developer:</h3>
 <ul>
     <li>Developer：Terry Zhou</li>
