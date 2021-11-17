@@ -180,3 +180,21 @@ body {
         width: 0%;
     }
 }
+
+@media (max-height:750px) {
+    .main .sideNav-list-item-link {
+        font-size: 2.5rem;
+    }
+    .social .sideNav-list-item-link {
+        font-size: 1.75rem;
+    }
+    .language .sideNav-list-item-link {
+        font-size: 1rem;
+    }
+    .sideNav-list-item {
+        height: 65px;
+    }
+    .sideNav-list {
+        margin-bottom: 20px;
+    }
+}
