@@ -65,13 +65,9 @@
     position: relative;
     height: auto;
     background-color: transparent;
-    margin-top: -50px;
-    margin-bottom: -50px;
 }
 
 .members-area-item {
-    margin-top: 50px;
-    margin-bottom: 50px;
     opacity: 0;
 }
 
@@ -94,6 +90,14 @@
     align-items: center;
     justify-content: end;
     height: 500px;
+}
+
+.members-area-bg {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
 
 .image {
@@ -244,6 +248,14 @@
     z-index: -1;
 }
 
+.fourDims-area-bg {
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -268,6 +280,9 @@
     }
     .main-title-text {
         padding-left: 3vw;
+    }
+    .fourDims-area-image-box.head {
+        width: 75px;
     }
 }
 
