@@ -45,20 +45,15 @@
     margin-top: 100px;
 }
 
-.form {
-    padding: 0 150px;
-}
-
-.form-item {
+.form-inputs-boxs-item {
     margin: 50px auto;
 }
 
-.form-item-input {
-    height: 100%;
-    width: auto;
+.form-inputs-titles-item {
+    margin: 50px auto;
 }
 
-.form-item-input-message {
+.form-message-input {
     width: 100%;
     height: auto;
     margin: 50px auto;
@@ -67,4 +62,8 @@
 .form-btn-sent {
     border: solid 5px #392A5F;
     color: #392A5F;
+}
+
+.form-btn-sent:hover {
+    background-color: gray;
 }
