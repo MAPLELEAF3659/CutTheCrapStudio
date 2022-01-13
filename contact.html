@@ -15,13 +15,28 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
 
     <title>Cut the Crap Studio | Contact Us</title>
 </head>
 
 <body>
+    <script type="module" src="js/contact.js">
+        const firebase = require("firebase"); require("firebase/firestore"); import { initializeApp } from "firebase/app"; import { getAnalytics } from "firebase/analytics"; const firebaseConfig = { apiKey: "AIzaSyCsriGcqSA9rW52K7RLN3-ATn5QZ0E7r6s", authDomain:
+        "ctcstudio-84f9a.firebaseapp.com", projectId: "ctcstudio-84f9a", storageBucket: "ctcstudio-84f9a.appspot.com", messagingSenderId: "60693238934", appId: "1:60693238934:web:5e678613dd5b354b651eb7", measurementId: "G-T241BPM857" }; const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
     <header class="row header align-items-center">
         <input class="col-1 header-nav" data-action="open" type="image" src="image/btn_nav.png" alt="btn_nav">
         <a class="col-11 header-logo" href="index.html">
@@ -67,20 +82,23 @@
         </div>
         <div class="contents">
             <div class="info">
-                <div class="row info-item align-items-center">
+                <div id="trigger1"></div>
+                <div class="row info-item align-items-center justify-content-center" id="item1">
                     <div class="col-2 col-md-2 info-item-img" id="icon-phone"></div>
                     <div class="col-4 col-md-3 info-item-title text-style-subtitle" id="info-title-phone">Phone</div>
-                    <div class="col-6 col-md-7 info-item-text text-style-text">+886 2 2012 2022</div>
+                    <div class="col-4 col-md-5 info-item-text text-style-text">+886 2 2012 2022</div>
                 </div>
-                <div class="row info-item align-items-center">
+                <div id="trigger2"></div>
+                <div class="row info-item align-items-center justify-content-center" id="item2">
                     <div class="col-2 col-md-2 info-item-img" id="icon-email"></div>
                     <div class="col-4 col-md-3 info-item-title text-style-subtitle" id="info-title-email">Mail</div>
-                    <div class="col-6 col-md-7 info-item-text text-style-text">ctcstudio@gmail.com</div>
+                    <div class="col-4 col-md-5 info-item-text text-style-text">ctcstudio@gmail.com</div>
                 </div>
-                <div class="row info-item align-items-center">
+                <div id="trigger3"></div>
+                <div class="row info-item align-items-center justify-content-center" id="item3">
                     <div class="col-2 col-md-2 info-item-img" id="icon-address"></div>
                     <div class="col-4 col-md-3 info-item-title text-style-subtitle" id="info-title-address">Address</div>
-                    <div class="col-6 col-md-7 info-item-text text-style-text">No. 1, Sec. 3, Zhongxiao E. Rd., Da’an Dist., Taipei City 106344 , Taiwan (R.O.C.)</div>
+                    <div class="col-4 col-md-5 info-item-text text-style-text">No. 1, Sec. 3, Zhongxiao E. Rd., Da’an Dist., Taipei City 106344 , Taiwan (R.O.C.)</div>
                 </div>
             </div>
             <div class="map">
@@ -151,7 +169,6 @@
         </div>
     </footer>
 
-    <script src="js/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/sideNav.js"></script>
 </body>

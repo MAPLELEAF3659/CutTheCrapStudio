@@ -45,6 +45,14 @@
     margin-top: 100px;
 }
 
+.info-item {
+    opacity: 0;
+}
+
+.info-item-img {
+    height: 50%;
+}
+
 .info-item-text {
     line-height: 1.15;
 }
