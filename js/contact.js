@@ -94,9 +94,12 @@ if (!firebase.apps.length) {
 }
 
 var db = firebase.firestore();
-// db.collection("message").add({
-//     userName: "Consumable",
-//     userEmail: "ctcstudio@gmail.com",
-//     userPhone: "0912345678",
-//     userMessage: "Hi"
-// })
+
+$("#btn-send").click(function() {
+    db.collection("message").add({
+        userName: $("#input-name").val(),
+        userEmail: $("#input-email").val(),
+        userPhone: $("#input-phone").val(),
+        userMessage: $("#input-message").val()
+    })
+});

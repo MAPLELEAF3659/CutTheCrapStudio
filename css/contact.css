@@ -57,18 +57,58 @@
     line-height: 1.15;
 }
 
+.form-title {
+    text-align: center;
+}
+
 .form-inputs-boxs-item {
+    position: relative;
+    min-height: 50px;
+    min-width: 166px;
     margin: 50px auto;
+}
+
+.form-inputs-boxs-item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form-inputs-boxs-item-input {
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    left: 10%;
+    border: none;
+    background-color: transparent;
 }
 
 .form-inputs-titles-item {
     margin: 50px auto;
 }
 
-.form-message-input {
-    width: 100%;
-    height: auto;
-    margin: 50px auto;
+.form-message-title {
+    text-align: center;
+}
+
+.form-message-box {
+    position: relative;
+    min-height: 600px;
+}
+
+.form-message-box-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.form-message-box-input {
+    position: absolute;
+    top: 6%;
+    left: 25%;
+    width: 71%;
+    border: none;
+    background-color: transparent;
 }
 
 .form-btn-sent {
