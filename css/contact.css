@@ -71,49 +71,17 @@
 
 .form-inputs-boxs-item-input {
     border: #392A5F solid 5px;
-    background-position: center;
-    background-repeat: no-repeat, repeat;
-    background-image: url("image/contactUs/paper.png");
     font-size: x-large;
 }
 
-
-/* .form-inputs-boxs-item {
-    position: relative;
-    min-height: 50px;
-    min-width: 166px;
-    margin: 50px auto;
-}
-
-.form-inputs-boxs-item-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.form-inputs-boxs-item-input {
-    position: absolute;
-    top: 25%;
-    width: 80%;
-    left: 10%;
-    border: none;
-    background-color: transparent;
-} */
-
-
-/* 
-.form-inputs-titles-item {
-    margin: 50px auto;
-} */
-
 .form-inputs-boxs-message-title {
     text-align: center;
+    margin: 25px auto;
 }
 
 .form-inputs-boxs-message-text {
     border: #392A5F solid 5px;
-    background-image: url("image/contactUs/paper.png");
-    margin: 25px auto;
+    margin-bottom: 25px;
     width: 100%;
 }
 
