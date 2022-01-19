@@ -73,15 +73,15 @@ var emailIconAnimation = bodymovin.loadAnimation({
     autoplay: true, // optional
 });
 
-$("#info-title-phone").mouseover(function() {
-    phoneIconAnimation.goToAndPlay(0);
-});
-$("#info-title-email").mouseover(function() {
-    emailIconAnimation.goToAndPlay(0);
-});
-$("#info-title-address").mouseover(function() {
-    addressIconAnimation.goToAndPlay(0);
-});
+// $("#info-title-phone").mouseover(function() {
+//     phoneIconAnimation.goToAndPlay(0);
+// });
+// $("#info-title-email").mouseover(function() {
+//     emailIconAnimation.goToAndPlay(0);
+// });
+// $("#info-title-address").mouseover(function() {
+//     addressIconAnimation.goToAndPlay(0);
+// });
 
 if (!firebase.apps.length) {
     firebase.initializeApp({
@@ -96,10 +96,26 @@ if (!firebase.apps.length) {
 var db = firebase.firestore();
 
 $("#btn-send").click(function() {
-    db.collection("message").add({
-        userName: $("#input-name").val(),
-        userEmail: $("#input-email").val(),
-        userPhone: $("#input-phone").val(),
-        userMessage: $("#input-message").val()
-    })
+    if ($("#input-name").val() == "" || $("#input-email").val() == "" ||
+        $("#input-phone").val() == "" || $("#input-message").val() == "")
+        sendAlertAppend("It seems to be something missed :( All required info must be filled.", "danger");
+    else {
+        db.collection("message").add({
+            userName: $("#input-name").val(),
+            userEmail: $("#input-email").val(),
+            userPhone: $("#input-phone").val(),
+            userMessage: $("#input-message").val()
+        });
+        sendAlertAppend("Thank you! We got your message.", "success");
+    }
 });
+
+var alertPlaceholder = $('#sendAlert')
+var alertTrigger = $('#btn-send')
+
+function sendAlertAppend(message, type) {
+    var wrapper = document.createElement('div')
+    wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+    alertPlaceholder.append(wrapper)
+}
