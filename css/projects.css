@@ -84,6 +84,12 @@
     .ani-area-line {
         opacity: 0;
     }
+    .work-area-item {
+        margin-bottom: 50px;
+    }
+    .display-title {
+        height: 65px;
+    }
 }
 
 @media (max-width:576px) {
@@ -95,6 +101,13 @@
     }
     .display-image {
         height: 150px;
+    }
+    .work-area {
+        padding-top: 0;
+    }
+    .work-area-item {
+        margin-bottom: 0;
+        margin-top: 20px;
     }
 }
 
