@@ -21,6 +21,7 @@
     height: 1100px;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .heads-ani-items {
@@ -56,6 +57,25 @@
 #head3 {
     left: 150px;
     top: 400px;
+    cursor: pointer;
+}
+
+#chatBox-head {
+    position: absolute;
+    left: 250px;
+    top: 350px;
+    width: 300px;
+    height: 150px;
+    background-image: url("/image/indexAni/chatbox_right.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+
+#chatBox-head p {
+    line-height: 1.25;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .heads-ani-items.logo {
@@ -63,6 +83,46 @@
     left: 0;
     right: 0;
     top: 500px;
+    cursor: pointer;
+}
+
+#chatBox-logo {
+    position: absolute;
+    left: 0;
+    right: 500px;
+    top: 450px;
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/image/indexAni/chatbox_left.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+
+#chatBox-logo p {
+    line-height: 1.25;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.chatBox {
+    opacity: 0;
+}
+
+.chatBox.isOn {
+    animation: fadeIn 0.5s;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .heads-ani-items.hand {
@@ -302,9 +362,25 @@
         left: 100px;
         top: 500px;
     }
+    #chatBox-head {
+        width: 250px;
+        height: 125px;
+        left: 150px;
+        top: 450px;
+    }
+    #chatBox-head p {
+        font-size: 2.5rem;
+    }
     .heads-ani-items.logo {
         width: 350px;
         top: 450px;
+    }
+    #chatBox-logo {
+        right: 400px;
+        top: 350px;
+    }
+    #chatBox-logo p {
+        font-size: 3rem;
     }
     .heads-ani-items.hand {
         width: 150px;
@@ -363,6 +439,24 @@
         left: 50px;
         top: 300px;
     }
+    #chatBox-head {
+        width: 200px;
+        height: 100px;
+        left: 100px;
+        top: 275px;
+    }
+    #chatBox-head p {
+        font-size: 1.75rem;
+    }
+    #chatBox-logo {
+        right: 275px;
+        top: 250px;
+        width: 275px;
+        height: 150px;
+    }
+    #chatBox-logo p {
+        font-size: 2.5rem;
+    }
     .heads-ani-bg.bg-building-with-road {
         top: 300px;
     }
@@ -397,9 +491,28 @@
         left: 50px;
         top: 250px;
     }
+    #chatBox-head {
+        width: 100px;
+        height: 50px;
+        left: 90px;
+        top: 235px;
+    }
+    #chatBox-head p {
+        line-height: 1.25;
+        font-size: 1rem;
+    }
     .heads-ani-items.logo {
         width: 150px;
         top: 225px;
+    }
+    #chatBox-logo {
+        right: 100px;
+        top: 200px;
+        width: 150px;
+        height: 75px;
+    }
+    #chatBox-logo p {
+        font-size: 1rem;
     }
     .heads-ani-items.hand {
         width: 50px;
@@ -417,6 +530,9 @@
     }
     .slogan {
         height: 200px;
+    }
+    .slogan-title-down {
+        margin-left: 40px;
     }
     .recentWork {
         margin-bottom: 10px;
