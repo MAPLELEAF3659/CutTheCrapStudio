@@ -65,7 +65,8 @@
 }
 
 .form-inputs-boxs-item-input::placeholder {
-    color: rgb(109, 94, 148);
+    color: #392A5F;
+    opacity: 0.75;
 }
 
 .form-inputs-boxs-message-title {
@@ -81,7 +82,8 @@
 }
 
 .form-inputs-boxs-message-text::placeholder {
-    color: rgb(109, 94, 148);
+    color: #392A5F;
+    opacity: 0.75;
 }
 
 .form-btn-sent {
